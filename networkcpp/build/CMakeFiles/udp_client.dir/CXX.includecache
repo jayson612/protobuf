@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jayson/networkcpp/networkcpp/src/udp_client.cpp
+cstring
+-
+iostream
+-
+system_error
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+time.h
+-
+unistd.h
+-
+

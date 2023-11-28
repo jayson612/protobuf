@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package protobuf;
+
+message AwesomeData {
+  string somestring = 1;
+  repeated float somearray = 2;
+}

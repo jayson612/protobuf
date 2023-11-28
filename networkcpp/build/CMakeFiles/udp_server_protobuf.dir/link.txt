@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/udp_server_protobuf.dir/src/udp_server_protobuf.cpp.o CMakeFiles/udp_server_protobuf.dir/protobuf/awesomedata.pb.cc.o  -o udp_server_protobuf  -lprotobuf -lpthread 

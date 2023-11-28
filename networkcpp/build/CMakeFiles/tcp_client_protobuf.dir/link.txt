@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/tcp_client_protobuf.dir/src/tcp_client_protobuf.cpp.o CMakeFiles/tcp_client_protobuf.dir/protobuf/awesomedata.pb.cc.o  -o tcp_client_protobuf  -lprotobuf -lpthread 
