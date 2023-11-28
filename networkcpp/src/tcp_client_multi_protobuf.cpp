@@ -18,6 +18,7 @@ using namespace std;
 int main()
 {
   int sockfd[NUM_MESSAGE] ={0, };
+  int a = 1;
   const char *SERVER_IP { "192.168.0.71" };
   uint16_t PORT[NUM_MESSAGE] { 10000, 20000 };
   sockaddr_in server_addr[2] {0, };
