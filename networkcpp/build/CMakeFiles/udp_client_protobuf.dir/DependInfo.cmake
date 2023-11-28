@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.cc" "/home/jayson/networkcpp/networkcpp/build/CMakeFiles/udp_client_protobuf.dir/protobuf/awesomedata.pb.cc.o"
-  "/home/jayson/networkcpp/networkcpp/src/udp_client_protobuf.cpp" "/home/jayson/networkcpp/networkcpp/build/CMakeFiles/udp_client_protobuf.dir/src/udp_client_protobuf.cpp.o"
+  "/home/jayson/networkcpp_update/networkcpp/protobuf/awesomedata.pb.cc" "/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles/udp_client_protobuf.dir/protobuf/awesomedata.pb.cc.o"
+  "/home/jayson/networkcpp_update/networkcpp/src/udp_client_protobuf.cpp" "/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles/udp_client_protobuf.dir/src/udp_client_protobuf.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

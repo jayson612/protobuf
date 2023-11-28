@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jayson/networkcpp/networkcpp
+CMAKE_SOURCE_DIR = /home/jayson/networkcpp_update/networkcpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jayson/networkcpp/networkcpp/build
+CMAKE_BINARY_DIR = /home/jayson/networkcpp_update/networkcpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp/networkcpp/build/CMakeFiles /home/jayson/networkcpp/networkcpp/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,69 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named udp_server
+# Target rules for targets named control_udp_server
 
 # Build rule for target.
-udp_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 udp_server
-.PHONY : udp_server
+control_udp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 control_udp_server
+.PHONY : control_udp_server
 
 # fast build rule for target.
-udp_server/fast:
-	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/build
-.PHONY : udp_server/fast
+control_udp_server/fast:
+	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/build
+.PHONY : control_udp_server/fast
 
 #=============================================================================
-# Target rules for targets named tcp_server_protobuf
+# Target rules for targets named tcp_client
 
 # Build rule for target.
-tcp_server_protobuf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_server_protobuf
-.PHONY : tcp_server_protobuf
+tcp_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_client
+.PHONY : tcp_client
 
 # fast build rule for target.
-tcp_server_protobuf/fast:
-	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/build
-.PHONY : tcp_server_protobuf/fast
-
-#=============================================================================
-# Target rules for targets named tcp_server
-
-# Build rule for target.
-tcp_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_server
-.PHONY : tcp_server
-
-# fast build rule for target.
-tcp_server/fast:
-	$(MAKE) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/build
-.PHONY : tcp_server/fast
-
-#=============================================================================
-# Target rules for targets named udp_client
-
-# Build rule for target.
-udp_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 udp_client
-.PHONY : udp_client
-
-# fast build rule for target.
-udp_client/fast:
-	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/build
-.PHONY : udp_client/fast
-
-#=============================================================================
-# Target rules for targets named tcp_client_multi_protobuf
-
-# Build rule for target.
-tcp_client_multi_protobuf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_client_multi_protobuf
-.PHONY : tcp_client_multi_protobuf
-
-# fast build rule for target.
-tcp_client_multi_protobuf/fast:
-	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/build
-.PHONY : tcp_client_multi_protobuf/fast
+tcp_client/fast:
+	$(MAKE) -f CMakeFiles/tcp_client.dir/build.make CMakeFiles/tcp_client.dir/build
+.PHONY : tcp_client/fast
 
 #=============================================================================
 # Target rules for targets named tcp_client_protobuf
@@ -189,17 +150,147 @@ tcp_client_protobuf/fast:
 .PHONY : tcp_client_protobuf/fast
 
 #=============================================================================
-# Target rules for targets named tcp_client
+# Target rules for targets named udp_client_protobuf
 
 # Build rule for target.
-tcp_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_client
-.PHONY : tcp_client
+udp_client_protobuf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_client_protobuf
+.PHONY : udp_client_protobuf
 
 # fast build rule for target.
-tcp_client/fast:
-	$(MAKE) -f CMakeFiles/tcp_client.dir/build.make CMakeFiles/tcp_client.dir/build
-.PHONY : tcp_client/fast
+udp_client_protobuf/fast:
+	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/build
+.PHONY : udp_client_protobuf/fast
+
+#=============================================================================
+# Target rules for targets named tcp_client_multi_protobuf
+
+# Build rule for target.
+tcp_client_multi_protobuf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_client_multi_protobuf
+.PHONY : tcp_client_multi_protobuf
+
+# fast build rule for target.
+tcp_client_multi_protobuf/fast:
+	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/build
+.PHONY : tcp_client_multi_protobuf/fast
+
+#=============================================================================
+# Target rules for targets named chomp_client
+
+# Build rule for target.
+chomp_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chomp_client
+.PHONY : chomp_client
+
+# fast build rule for target.
+chomp_client/fast:
+	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/build
+.PHONY : chomp_client/fast
+
+#=============================================================================
+# Target rules for targets named udp_client
+
+# Build rule for target.
+udp_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_client
+.PHONY : udp_client
+
+# fast build rule for target.
+udp_client/fast:
+	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/build
+.PHONY : udp_client/fast
+
+#=============================================================================
+# Target rules for targets named tcp_server
+
+# Build rule for target.
+tcp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_server
+.PHONY : tcp_server
+
+# fast build rule for target.
+tcp_server/fast:
+	$(MAKE) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/build
+.PHONY : tcp_server/fast
+
+#=============================================================================
+# Target rules for targets named tcp_server_protobuf
+
+# Build rule for target.
+tcp_server_protobuf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_server_protobuf
+.PHONY : tcp_server_protobuf
+
+# fast build rule for target.
+tcp_server_protobuf/fast:
+	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/build
+.PHONY : tcp_server_protobuf/fast
+
+#=============================================================================
+# Target rules for targets named control_tcp_server
+
+# Build rule for target.
+control_tcp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 control_tcp_server
+.PHONY : control_tcp_server
+
+# fast build rule for target.
+control_tcp_server/fast:
+	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/build
+.PHONY : control_tcp_server/fast
+
+#=============================================================================
+# Target rules for targets named foothold_client
+
+# Build rule for target.
+foothold_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 foothold_client
+.PHONY : foothold_client
+
+# fast build rule for target.
+foothold_client/fast:
+	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/build
+.PHONY : foothold_client/fast
+
+#=============================================================================
+# Target rules for targets named udp_server
+
+# Build rule for target.
+udp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_server
+.PHONY : udp_server
+
+# fast build rule for target.
+udp_server/fast:
+	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/build
+.PHONY : udp_server/fast
+
+#=============================================================================
+# Target rules for targets named control_tcp_server_multi_thread
+
+# Build rule for target.
+control_tcp_server_multi_thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 control_tcp_server_multi_thread
+.PHONY : control_tcp_server_multi_thread
+
+# fast build rule for target.
+control_tcp_server_multi_thread/fast:
+	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/build
+.PHONY : control_tcp_server_multi_thread/fast
+
+#=============================================================================
+# Target rules for targets named udp_server_protobuf
+
+# Build rule for target.
+udp_server_protobuf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_server_protobuf
+.PHONY : udp_server_protobuf
+
+# fast build rule for target.
+udp_server_protobuf/fast:
+	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/build
+.PHONY : udp_server_protobuf/fast
 
 protobuf/awesomedata.pb.o: protobuf/awesomedata.pb.cc.o
 
@@ -207,9 +298,16 @@ protobuf/awesomedata.pb.o: protobuf/awesomedata.pb.cc.o
 
 # target to build an object file
 protobuf/awesomedata.pb.cc.o:
-	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/protobuf/awesomedata.pb.cc.o
-	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o
 	$(MAKE) -f CMakeFiles/tcp_client_protobuf.dir/build.make CMakeFiles/tcp_client_protobuf.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.o
+	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/protobuf/awesomedata.pb.cc.o
 .PHONY : protobuf/awesomedata.pb.cc.o
 
 protobuf/awesomedata.pb.i: protobuf/awesomedata.pb.cc.i
@@ -218,9 +316,16 @@ protobuf/awesomedata.pb.i: protobuf/awesomedata.pb.cc.i
 
 # target to preprocess a source file
 protobuf/awesomedata.pb.cc.i:
-	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/protobuf/awesomedata.pb.cc.i
-	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.i
 	$(MAKE) -f CMakeFiles/tcp_client_protobuf.dir/build.make CMakeFiles/tcp_client_protobuf.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.i
+	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/protobuf/awesomedata.pb.cc.i
 .PHONY : protobuf/awesomedata.pb.cc.i
 
 protobuf/awesomedata.pb.s: protobuf/awesomedata.pb.cc.s
@@ -229,10 +334,152 @@ protobuf/awesomedata.pb.s: protobuf/awesomedata.pb.cc.s
 
 # target to generate assembly for a file
 protobuf/awesomedata.pb.cc.s:
-	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/protobuf/awesomedata.pb.cc.s
-	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.s
 	$(MAKE) -f CMakeFiles/tcp_client_protobuf.dir/build.make CMakeFiles/tcp_client_protobuf.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.s
+	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/protobuf/awesomedata.pb.cc.s
 .PHONY : protobuf/awesomedata.pb.cc.s
+
+src/chomp_client.o: src/chomp_client.cpp.o
+
+.PHONY : src/chomp_client.o
+
+# target to build an object file
+src/chomp_client.cpp.o:
+	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/src/chomp_client.cpp.o
+.PHONY : src/chomp_client.cpp.o
+
+src/chomp_client.i: src/chomp_client.cpp.i
+
+.PHONY : src/chomp_client.i
+
+# target to preprocess a source file
+src/chomp_client.cpp.i:
+	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/src/chomp_client.cpp.i
+.PHONY : src/chomp_client.cpp.i
+
+src/chomp_client.s: src/chomp_client.cpp.s
+
+.PHONY : src/chomp_client.s
+
+# target to generate assembly for a file
+src/chomp_client.cpp.s:
+	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/src/chomp_client.cpp.s
+.PHONY : src/chomp_client.cpp.s
+
+src/control_tcp_server.o: src/control_tcp_server.cpp.o
+
+.PHONY : src/control_tcp_server.o
+
+# target to build an object file
+src/control_tcp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/src/control_tcp_server.cpp.o
+.PHONY : src/control_tcp_server.cpp.o
+
+src/control_tcp_server.i: src/control_tcp_server.cpp.i
+
+.PHONY : src/control_tcp_server.i
+
+# target to preprocess a source file
+src/control_tcp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/src/control_tcp_server.cpp.i
+.PHONY : src/control_tcp_server.cpp.i
+
+src/control_tcp_server.s: src/control_tcp_server.cpp.s
+
+.PHONY : src/control_tcp_server.s
+
+# target to generate assembly for a file
+src/control_tcp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/src/control_tcp_server.cpp.s
+.PHONY : src/control_tcp_server.cpp.s
+
+src/control_tcp_server_multi_thread.o: src/control_tcp_server_multi_thread.cpp.o
+
+.PHONY : src/control_tcp_server_multi_thread.o
+
+# target to build an object file
+src/control_tcp_server_multi_thread.cpp.o:
+	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.o
+.PHONY : src/control_tcp_server_multi_thread.cpp.o
+
+src/control_tcp_server_multi_thread.i: src/control_tcp_server_multi_thread.cpp.i
+
+.PHONY : src/control_tcp_server_multi_thread.i
+
+# target to preprocess a source file
+src/control_tcp_server_multi_thread.cpp.i:
+	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.i
+.PHONY : src/control_tcp_server_multi_thread.cpp.i
+
+src/control_tcp_server_multi_thread.s: src/control_tcp_server_multi_thread.cpp.s
+
+.PHONY : src/control_tcp_server_multi_thread.s
+
+# target to generate assembly for a file
+src/control_tcp_server_multi_thread.cpp.s:
+	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.s
+.PHONY : src/control_tcp_server_multi_thread.cpp.s
+
+src/control_udp_server.o: src/control_udp_server.cpp.o
+
+.PHONY : src/control_udp_server.o
+
+# target to build an object file
+src/control_udp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o
+.PHONY : src/control_udp_server.cpp.o
+
+src/control_udp_server.i: src/control_udp_server.cpp.i
+
+.PHONY : src/control_udp_server.i
+
+# target to preprocess a source file
+src/control_udp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.i
+.PHONY : src/control_udp_server.cpp.i
+
+src/control_udp_server.s: src/control_udp_server.cpp.s
+
+.PHONY : src/control_udp_server.s
+
+# target to generate assembly for a file
+src/control_udp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.s
+.PHONY : src/control_udp_server.cpp.s
+
+src/foothold_client.o: src/foothold_client.cpp.o
+
+.PHONY : src/foothold_client.o
+
+# target to build an object file
+src/foothold_client.cpp.o:
+	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o
+.PHONY : src/foothold_client.cpp.o
+
+src/foothold_client.i: src/foothold_client.cpp.i
+
+.PHONY : src/foothold_client.i
+
+# target to preprocess a source file
+src/foothold_client.cpp.i:
+	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/src/foothold_client.cpp.i
+.PHONY : src/foothold_client.cpp.i
+
+src/foothold_client.s: src/foothold_client.cpp.s
+
+.PHONY : src/foothold_client.s
+
+# target to generate assembly for a file
+src/foothold_client.cpp.s:
+	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/src/foothold_client.cpp.s
+.PHONY : src/foothold_client.cpp.s
 
 src/tcp_client.o: src/tcp_client.cpp.o
 
@@ -396,6 +643,33 @@ src/udp_client.cpp.s:
 	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/src/udp_client.cpp.s
 .PHONY : src/udp_client.cpp.s
 
+src/udp_client_protobuf.o: src/udp_client_protobuf.cpp.o
+
+.PHONY : src/udp_client_protobuf.o
+
+# target to build an object file
+src/udp_client_protobuf.cpp.o:
+	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/src/udp_client_protobuf.cpp.o
+.PHONY : src/udp_client_protobuf.cpp.o
+
+src/udp_client_protobuf.i: src/udp_client_protobuf.cpp.i
+
+.PHONY : src/udp_client_protobuf.i
+
+# target to preprocess a source file
+src/udp_client_protobuf.cpp.i:
+	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/src/udp_client_protobuf.cpp.i
+.PHONY : src/udp_client_protobuf.cpp.i
+
+src/udp_client_protobuf.s: src/udp_client_protobuf.cpp.s
+
+.PHONY : src/udp_client_protobuf.s
+
+# target to generate assembly for a file
+src/udp_client_protobuf.cpp.s:
+	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/src/udp_client_protobuf.cpp.s
+.PHONY : src/udp_client_protobuf.cpp.s
+
 src/udp_server.o: src/udp_server.cpp.o
 
 .PHONY : src/udp_server.o
@@ -423,6 +697,33 @@ src/udp_server.cpp.s:
 	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/src/udp_server.cpp.s
 .PHONY : src/udp_server.cpp.s
 
+src/udp_server_protobuf.o: src/udp_server_protobuf.cpp.o
+
+.PHONY : src/udp_server_protobuf.o
+
+# target to build an object file
+src/udp_server_protobuf.cpp.o:
+	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/src/udp_server_protobuf.cpp.o
+.PHONY : src/udp_server_protobuf.cpp.o
+
+src/udp_server_protobuf.i: src/udp_server_protobuf.cpp.i
+
+.PHONY : src/udp_server_protobuf.i
+
+# target to preprocess a source file
+src/udp_server_protobuf.cpp.i:
+	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/src/udp_server_protobuf.cpp.i
+.PHONY : src/udp_server_protobuf.cpp.i
+
+src/udp_server_protobuf.s: src/udp_server_protobuf.cpp.s
+
+.PHONY : src/udp_server_protobuf.s
+
+# target to generate assembly for a file
+src/udp_server_protobuf.cpp.s:
+	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/src/udp_server_protobuf.cpp.s
+.PHONY : src/udp_server_protobuf.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -431,16 +732,38 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... udp_server"
-	@echo "... tcp_server_protobuf"
-	@echo "... tcp_server"
-	@echo "... udp_client"
-	@echo "... tcp_client_multi_protobuf"
-	@echo "... tcp_client_protobuf"
+	@echo "... control_udp_server"
 	@echo "... tcp_client"
+	@echo "... tcp_client_protobuf"
+	@echo "... udp_client_protobuf"
+	@echo "... tcp_client_multi_protobuf"
+	@echo "... chomp_client"
+	@echo "... udp_client"
+	@echo "... tcp_server"
+	@echo "... tcp_server_protobuf"
+	@echo "... control_tcp_server"
+	@echo "... foothold_client"
+	@echo "... udp_server"
+	@echo "... control_tcp_server_multi_thread"
+	@echo "... udp_server_protobuf"
 	@echo "... protobuf/awesomedata.pb.o"
 	@echo "... protobuf/awesomedata.pb.i"
 	@echo "... protobuf/awesomedata.pb.s"
+	@echo "... src/chomp_client.o"
+	@echo "... src/chomp_client.i"
+	@echo "... src/chomp_client.s"
+	@echo "... src/control_tcp_server.o"
+	@echo "... src/control_tcp_server.i"
+	@echo "... src/control_tcp_server.s"
+	@echo "... src/control_tcp_server_multi_thread.o"
+	@echo "... src/control_tcp_server_multi_thread.i"
+	@echo "... src/control_tcp_server_multi_thread.s"
+	@echo "... src/control_udp_server.o"
+	@echo "... src/control_udp_server.i"
+	@echo "... src/control_udp_server.s"
+	@echo "... src/foothold_client.o"
+	@echo "... src/foothold_client.i"
+	@echo "... src/foothold_client.s"
 	@echo "... src/tcp_client.o"
 	@echo "... src/tcp_client.i"
 	@echo "... src/tcp_client.s"
@@ -459,9 +782,15 @@ help:
 	@echo "... src/udp_client.o"
 	@echo "... src/udp_client.i"
 	@echo "... src/udp_client.s"
+	@echo "... src/udp_client_protobuf.o"
+	@echo "... src/udp_client_protobuf.i"
+	@echo "... src/udp_client_protobuf.s"
 	@echo "... src/udp_server.o"
 	@echo "... src/udp_server.i"
 	@echo "... src/udp_server.s"
+	@echo "... src/udp_server_protobuf.o"
+	@echo "... src/udp_server_protobuf.i"
+	@echo "... src/udp_server_protobuf.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/chomp_client.dir/src/chomp_client.cpp.o CMakeFiles/chomp_client.dir/protobuf/awesomedata.pb.cc.o  -o chomp_client  -lprotobuf -lpthread 

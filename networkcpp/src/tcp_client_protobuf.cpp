@@ -15,8 +15,8 @@
 int main()
 {
   int sockfd {};
-  const char *SERVER_IP { "192.168.0.71" };
-  uint16_t PORT { 20000 };
+  const char *SERVER_IP { "127.0.0.1" };
+  uint16_t PORT { 10000 };
   sockaddr_in server_addr {};
   timespec TS_SEC_1 { .tv_sec = 1, .tv_nsec = 0 };
   protobuf::AwesomeData awesomedata_pb;

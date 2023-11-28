@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o  -o foothold_client  -lprotobuf -lpthread 
