@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jayson/networkcpp_update/networkcpp/src/udp_client.cpp
+/home/bumsu/protobuf/networkcpp/src/udp_client.cpp
 cstring
 -
 iostream

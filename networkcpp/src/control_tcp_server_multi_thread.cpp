@@ -68,12 +68,12 @@ int main() {
         std::string str_buf(buffer, buffer + recv_len);
         if (awesomedata_pb.ParseFromString(str_buf)) {
           std::string str = awesomedata_pb.somestring();
-          std::cout << "String: " << str << std::endl;
-          std::cout << "Array: ";
-          for (int i = 0; i < awesomedata_pb.somearray_size(); i++) {
-            std::cout << awesomedata_pb.somearray(i) << " ";
-          }
-          std::cout << std::endl;
+          // std::cout << "String: " << str << std::endl;
+          // std::cout << "Array: ";
+          // for (int i = 0; i < awesomedata_pb.somearray_size(); i++) {
+          //   std::cout << awesomedata_pb.somearray(i) << " ";
+          // }
+          // std::cout << std::endl;
 
 
           // TODO: protocol buffer를 사용하도록 수정
@@ -93,12 +93,12 @@ int main() {
           // sw_flag_cur_foot_pd 객체 직렬화
           std::string serialized_data = sw_flag_cur_foot_pd.SerializeAsString();
 
-          // 직렬화된 데이터의 크기를 전송
-          uint32_t message_size = serialized_data.size();
-          write(client_sockfd, &message_size, sizeof(message_size));
+          // // 직렬화된 데이터의 크기를 전송
+          // uint32_t message_size = serialized_data.size();
+          // write(client_sockfd, &message_size, sizeof(message_size));
 
           // 직렬화된 데이터를 클라이언트에게 전송
-          write(client_sockfd, serialized_data.data(), message_size);
+          write(client_sockfd, serialized_data.data(), serialized_data.size());
 
         
         } else {

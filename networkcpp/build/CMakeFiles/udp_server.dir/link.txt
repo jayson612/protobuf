@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/udp_server.dir/src/udp_server.cpp.o  -o udp_server 
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/udp_server.dir/src/udp_server.cpp.o  -o udp_server 

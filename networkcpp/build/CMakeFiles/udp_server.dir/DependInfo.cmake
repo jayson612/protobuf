@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jayson/networkcpp_update/networkcpp/src/udp_server.cpp" "/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles/udp_server.dir/src/udp_server.cpp.o"
+  "/home/bumsu/protobuf/networkcpp/src/udp_server.cpp" "/home/bumsu/protobuf/networkcpp/build/CMakeFiles/udp_server.dir/src/udp_server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

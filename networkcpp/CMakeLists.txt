@@ -4,6 +4,7 @@ project(networkcpp CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
 set(PROTOBUF_DIR ${CMAKE_SOURCE_DIR}/protobuf)
+set(CMAKE_BUILD_TYPE Release)
 
 # TCP Client 
 add_executable(tcp_client

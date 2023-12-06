@@ -11,6 +11,7 @@
 #include <unistd.h>
 #include <awesomedata.pb.h>
 #include <thread>
+#include <chrono>
 
 #define BUFFER_SIZE 1024
 
@@ -23,7 +24,7 @@ void tcp_communication(const char* server_ip, uint16_t port) {
   const char *SERVER_IP { "127.0.0.1" };
   uint16_t PORT { TCP_PORT };
   sockaddr_in server_addr {};
-  timespec TS_SEC_1 { .tv_sec = 1, .tv_nsec = 0 };
+  timespec TS_SEC_1 { .tv_sec = 0, .tv_nsec = 1850000 };
   protobuf::AwesomeData opt_trajectory_pd;
   protobuf::AwesomeData sw_flag_cur_foot_pd;
 
@@ -67,22 +68,27 @@ void tcp_communication(const char* server_ip, uint16_t port) {
   std::copy(string_buffer.begin(), string_buffer.end(), char_buffer);
   char_buffer[string_buffer.size()] = '\0';
 
+  auto prev_end = std::chrono::high_resolution_clock::now();
+  int message_count = 0;
+
   int sent {};
   while (true) {
+    message_count++;
+    auto start = std::chrono::high_resolution_clock::now();
     sent = write(sockfd, char_buffer, opt_trajectory_pd.ByteSizeLong());
     nanosleep(&TS_SEC_1, nullptr);
 
     // 서버로부터 protobuf 메시지 크기를 먼저 받기
     int message_size;
-    int len = read(sockfd, &message_size, sizeof(message_size));
-    if (len <= 0) {
-      std::cerr << "Read error: " << std::system_error(errno, std::generic_category()).what() << std::endl;
-      break;
-    }
-
+    // int len = read(sockfd, &message_size, 4);
+    // if (len <= 0) {
+    //   std::cerr << "Read error: " << std::system_error(errno, std::generic_category()).what() << std::endl;
+    //   break;
+    // }
+    message_size = 108;
     // 메시지 크기만큼 데이터를 받기
     char* message_buffer = new char[message_size];
-    len = read(sockfd, message_buffer, message_size);
+    int len = read(sockfd, message_buffer, message_size);
     if (len <= 0) {
       std::cerr << "Read error: " << std::system_error(errno, std::generic_category()).what() << std::endl;
       delete[] message_buffer;
@@ -100,12 +106,25 @@ void tcp_communication(const char* server_ip, uint16_t port) {
     }
 
     // 받은 데이터를 처리
-    std::cout << "Received String: " << sw_flag_cur_foot_pd.somestring() << std::endl;
-    std::cout << "Received Array: ";
-    for (int i = 0; i < sw_flag_cur_foot_pd.somearray_size(); i++) {
-      std::cout << sw_flag_cur_foot_pd.somearray(i) << " ";
+    // std::cout << "Received String: " << sw_flag_cur_foot_pd.somestring() << std::endl;
+    // std::cout << "Received Array: ";
+    // for (int i = 0; i < sw_flag_cur_foot_pd.somearray_size(); i++) {
+    //   std::cout << sw_flag_cur_foot_pd.somearray(i) << " ";
+    // }
+    // std::cout << std::endl;
+
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> consumed_time = end - prev_end;
+    // std::cout << consumed_time.count() << std::endl;
+    if(consumed_time.count() > 1)
+    {
+      double message_freq = message_count / (consumed_time.count());
+      std::cout << "data frequency : " << message_freq << "hz" << std::endl;
+      std::cout << "========================" << std::endl;
+      prev_end = end;
+      message_count = 0;
     }
-    std::cout << std::endl;
+    // std::cout << "consumed_time : " << consumed_time.count()*1000 << "mili-second..." << std::endl;
 
     delete[] message_buffer;
   }

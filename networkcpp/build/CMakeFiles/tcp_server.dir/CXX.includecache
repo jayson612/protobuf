@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jayson/networkcpp_update/networkcpp/src/tcp_server.cpp
+/home/bumsu/protobuf/networkcpp/src/tcp_server.cpp
 cstring
 -
 iostream

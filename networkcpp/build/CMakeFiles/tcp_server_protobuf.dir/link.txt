@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/tcp_server_protobuf.dir/src/tcp_server_protobuf.cpp.o CMakeFiles/tcp_server_protobuf.dir/protobuf/awesomedata.pb.cc.o  -o tcp_server_protobuf  -lprotobuf -lpthread 
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/tcp_server_protobuf.dir/src/tcp_server_protobuf.cpp.o CMakeFiles/tcp_server_protobuf.dir/protobuf/awesomedata.pb.cc.o  -o tcp_server_protobuf  -lprotobuf -lpthread 

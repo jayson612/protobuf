@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o  -o control_udp_server  -lprotobuf -lpthread 
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o  -o control_udp_server  -lprotobuf -lpthread 

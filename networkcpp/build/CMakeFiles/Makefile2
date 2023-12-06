@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jayson/networkcpp_update/networkcpp
+CMAKE_SOURCE_DIR = /home/bumsu/protobuf/networkcpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jayson/networkcpp_update/networkcpp/build
+CMAKE_BINARY_DIR = /home/bumsu/protobuf/networkcpp/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -100,14 +100,14 @@ clean: CMakeFiles/udp_server_protobuf.dir/clean
 CMakeFiles/control_udp_server.dir/all:
 	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/depend
 	$(MAKE) -f CMakeFiles/control_udp_server.dir/build.make CMakeFiles/control_udp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=10,11,12 "Built target control_udp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=10,11,12 "Built target control_udp_server"
 .PHONY : CMakeFiles/control_udp_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/control_udp_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/control_udp_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/control_udp_server.dir/rule
 
 # Convenience name for target.
@@ -127,14 +127,14 @@ CMakeFiles/control_udp_server.dir/clean:
 CMakeFiles/tcp_client.dir/all:
 	$(MAKE) -f CMakeFiles/tcp_client.dir/build.make CMakeFiles/tcp_client.dir/depend
 	$(MAKE) -f CMakeFiles/tcp_client.dir/build.make CMakeFiles/tcp_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=16,17 "Built target tcp_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=16,17 "Built target tcp_client"
 .PHONY : CMakeFiles/tcp_client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tcp_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcp_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/tcp_client.dir/rule
 
 # Convenience name for target.
@@ -154,14 +154,14 @@ CMakeFiles/tcp_client.dir/clean:
 CMakeFiles/tcp_client_protobuf.dir/all:
 	$(MAKE) -f CMakeFiles/tcp_client_protobuf.dir/build.make CMakeFiles/tcp_client_protobuf.dir/depend
 	$(MAKE) -f CMakeFiles/tcp_client_protobuf.dir/build.make CMakeFiles/tcp_client_protobuf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=21,22,23 "Built target tcp_client_protobuf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=21,22,23 "Built target tcp_client_protobuf"
 .PHONY : CMakeFiles/tcp_client_protobuf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tcp_client_protobuf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcp_client_protobuf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/tcp_client_protobuf.dir/rule
 
 # Convenience name for target.
@@ -181,14 +181,14 @@ CMakeFiles/tcp_client_protobuf.dir/clean:
 CMakeFiles/udp_client_protobuf.dir/all:
 	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/depend
 	$(MAKE) -f CMakeFiles/udp_client_protobuf.dir/build.make CMakeFiles/udp_client_protobuf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=31,32,33 "Built target udp_client_protobuf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=31,32,33 "Built target udp_client_protobuf"
 .PHONY : CMakeFiles/udp_client_protobuf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/udp_client_protobuf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_client_protobuf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/udp_client_protobuf.dir/rule
 
 # Convenience name for target.
@@ -208,14 +208,14 @@ CMakeFiles/udp_client_protobuf.dir/clean:
 CMakeFiles/tcp_client_multi_protobuf.dir/all:
 	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/depend
 	$(MAKE) -f CMakeFiles/tcp_client_multi_protobuf.dir/build.make CMakeFiles/tcp_client_multi_protobuf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=18,19,20 "Built target tcp_client_multi_protobuf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=18,19,20 "Built target tcp_client_multi_protobuf"
 .PHONY : CMakeFiles/tcp_client_multi_protobuf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tcp_client_multi_protobuf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcp_client_multi_protobuf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/tcp_client_multi_protobuf.dir/rule
 
 # Convenience name for target.
@@ -235,14 +235,14 @@ CMakeFiles/tcp_client_multi_protobuf.dir/clean:
 CMakeFiles/chomp_client.dir/all:
 	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/depend
 	$(MAKE) -f CMakeFiles/chomp_client.dir/build.make CMakeFiles/chomp_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=1,2,3 "Built target chomp_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=1,2,3 "Built target chomp_client"
 .PHONY : CMakeFiles/chomp_client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/chomp_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/chomp_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/chomp_client.dir/rule
 
 # Convenience name for target.
@@ -262,14 +262,14 @@ CMakeFiles/chomp_client.dir/clean:
 CMakeFiles/udp_client.dir/all:
 	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/depend
 	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=29,30 "Built target udp_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=29,30 "Built target udp_client"
 .PHONY : CMakeFiles/udp_client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/udp_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/udp_client.dir/rule
 
 # Convenience name for target.
@@ -289,14 +289,14 @@ CMakeFiles/udp_client.dir/clean:
 CMakeFiles/tcp_server.dir/all:
 	$(MAKE) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/depend
 	$(MAKE) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=24,25 "Built target tcp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=24,25 "Built target tcp_server"
 .PHONY : CMakeFiles/tcp_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tcp_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcp_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/tcp_server.dir/rule
 
 # Convenience name for target.
@@ -316,14 +316,14 @@ CMakeFiles/tcp_server.dir/clean:
 CMakeFiles/tcp_server_protobuf.dir/all:
 	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/depend
 	$(MAKE) -f CMakeFiles/tcp_server_protobuf.dir/build.make CMakeFiles/tcp_server_protobuf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=26,27,28 "Built target tcp_server_protobuf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=26,27,28 "Built target tcp_server_protobuf"
 .PHONY : CMakeFiles/tcp_server_protobuf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tcp_server_protobuf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcp_server_protobuf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/tcp_server_protobuf.dir/rule
 
 # Convenience name for target.
@@ -343,14 +343,14 @@ CMakeFiles/tcp_server_protobuf.dir/clean:
 CMakeFiles/control_tcp_server.dir/all:
 	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/depend
 	$(MAKE) -f CMakeFiles/control_tcp_server.dir/build.make CMakeFiles/control_tcp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=4,5,6 "Built target control_tcp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=4,5,6 "Built target control_tcp_server"
 .PHONY : CMakeFiles/control_tcp_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/control_tcp_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/control_tcp_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/control_tcp_server.dir/rule
 
 # Convenience name for target.
@@ -370,14 +370,14 @@ CMakeFiles/control_tcp_server.dir/clean:
 CMakeFiles/foothold_client.dir/all:
 	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/depend
 	$(MAKE) -f CMakeFiles/foothold_client.dir/build.make CMakeFiles/foothold_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=13,14,15 "Built target foothold_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=13,14,15 "Built target foothold_client"
 .PHONY : CMakeFiles/foothold_client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/foothold_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/foothold_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/foothold_client.dir/rule
 
 # Convenience name for target.
@@ -397,14 +397,14 @@ CMakeFiles/foothold_client.dir/clean:
 CMakeFiles/udp_server.dir/all:
 	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/depend
 	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=34,35 "Built target udp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=34,35 "Built target udp_server"
 .PHONY : CMakeFiles/udp_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/udp_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/udp_server.dir/rule
 
 # Convenience name for target.
@@ -424,14 +424,14 @@ CMakeFiles/udp_server.dir/clean:
 CMakeFiles/control_tcp_server_multi_thread.dir/all:
 	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/depend
 	$(MAKE) -f CMakeFiles/control_tcp_server_multi_thread.dir/build.make CMakeFiles/control_tcp_server_multi_thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=7,8,9 "Built target control_tcp_server_multi_thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=7,8,9 "Built target control_tcp_server_multi_thread"
 .PHONY : CMakeFiles/control_tcp_server_multi_thread.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/control_tcp_server_multi_thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/control_tcp_server_multi_thread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/control_tcp_server_multi_thread.dir/rule
 
 # Convenience name for target.
@@ -451,14 +451,14 @@ CMakeFiles/control_tcp_server_multi_thread.dir/clean:
 CMakeFiles/udp_server_protobuf.dir/all:
 	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/depend
 	$(MAKE) -f CMakeFiles/udp_server_protobuf.dir/build.make CMakeFiles/udp_server_protobuf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=36,37,38 "Built target udp_server_protobuf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=36,37,38 "Built target udp_server_protobuf"
 .PHONY : CMakeFiles/udp_server_protobuf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/udp_server_protobuf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_server_protobuf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bumsu/protobuf/networkcpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/udp_server_protobuf.dir/rule
 
 # Convenience name for target.

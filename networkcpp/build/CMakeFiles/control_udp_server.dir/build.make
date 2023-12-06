@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jayson/networkcpp_update/networkcpp
+CMAKE_SOURCE_DIR = /home/bumsu/protobuf/networkcpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jayson/networkcpp_update/networkcpp/build
+CMAKE_BINARY_DIR = /home/bumsu/protobuf/networkcpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/control_udp_server.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/control_udp_server.dir/flags.make
 
 CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o: CMakeFiles/control_udp_server.dir/flags.make
 CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o: ../src/control_udp_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o -c /home/jayson/networkcpp_update/networkcpp/src/control_udp_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.o -c /home/bumsu/protobuf/networkcpp/src/control_udp_server.cpp
 
 CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayson/networkcpp_update/networkcpp/src/control_udp_server.cpp > CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bumsu/protobuf/networkcpp/src/control_udp_server.cpp > CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.i
 
 CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayson/networkcpp_update/networkcpp/src/control_udp_server.cpp -o CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bumsu/protobuf/networkcpp/src/control_udp_server.cpp -o CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp.s
 
 CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o: CMakeFiles/control_udp_server.dir/flags.make
 CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o: ../protobuf/awesomedata.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o -c /home/jayson/networkcpp_update/networkcpp/protobuf/awesomedata.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o -c /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc
 
 CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayson/networkcpp_update/networkcpp/protobuf/awesomedata.pb.cc > CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc > CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.i
 
 CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayson/networkcpp_update/networkcpp/protobuf/awesomedata.pb.cc -o CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc -o CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.s
 
 # Object files for target control_udp_server
 control_udp_server_OBJECTS = \
@@ -95,7 +95,7 @@ control_udp_server: CMakeFiles/control_udp_server.dir/src/control_udp_server.cpp
 control_udp_server: CMakeFiles/control_udp_server.dir/protobuf/awesomedata.pb.cc.o
 control_udp_server: CMakeFiles/control_udp_server.dir/build.make
 control_udp_server: CMakeFiles/control_udp_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jayson/networkcpp_update/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable control_udp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable control_udp_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/control_udp_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/control_udp_server.dir/clean:
 .PHONY : CMakeFiles/control_udp_server.dir/clean
 
 CMakeFiles/control_udp_server.dir/depend:
-	cd /home/jayson/networkcpp_update/networkcpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jayson/networkcpp_update/networkcpp /home/jayson/networkcpp_update/networkcpp /home/jayson/networkcpp_update/networkcpp/build /home/jayson/networkcpp_update/networkcpp/build /home/jayson/networkcpp_update/networkcpp/build/CMakeFiles/control_udp_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bumsu/protobuf/networkcpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bumsu/protobuf/networkcpp /home/bumsu/protobuf/networkcpp /home/bumsu/protobuf/networkcpp/build /home/bumsu/protobuf/networkcpp/build /home/bumsu/protobuf/networkcpp/build/CMakeFiles/control_udp_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/control_udp_server.dir/depend
 
