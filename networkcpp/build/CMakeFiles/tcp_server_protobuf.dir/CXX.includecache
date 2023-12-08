@@ -34,9 +34,9 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 
-/home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc
+/home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.cc
 awesomedata.pb.h
-/home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.h
+/home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
@@ -56,9 +56,9 @@ google/protobuf/reflection_ops.h
 google/protobuf/wire_format.h
 -
 third_party/protobuf/version.h
-/home/bumsu/protobuf/networkcpp/protobuf/third_party/protobuf/version.h
+/home/jayson/networkcpp/networkcpp/protobuf/third_party/protobuf/version.h
 
-/home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.h
+/home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.h
 string
 -
 google/protobuf/stubs/common.h
@@ -86,7 +86,7 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 
-/home/bumsu/protobuf/networkcpp/src/tcp_server_protobuf.cpp
+/home/jayson/networkcpp/networkcpp/src/tcp_server_protobuf.cpp
 cstring
 -
 iostream

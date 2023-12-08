@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bumsu/protobuf/networkcpp
+CMAKE_SOURCE_DIR = /home/jayson/networkcpp/networkcpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bumsu/protobuf/networkcpp/build
+CMAKE_BINARY_DIR = /home/jayson/networkcpp/networkcpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/control_tcp_server_multi_thread.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/control_tcp_server_multi_thread.dir/flags.make
 
 CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.o: CMakeFiles/control_tcp_server_multi_thread.dir/flags.make
 CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.o: ../src/control_tcp_server_multi_thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.o -c /home/bumsu/protobuf/networkcpp/src/control_tcp_server_multi_thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jayson/networkcpp/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.o -c /home/jayson/networkcpp/networkcpp/src/control_tcp_server_multi_thread.cpp
 
 CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bumsu/protobuf/networkcpp/src/control_tcp_server_multi_thread.cpp > CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayson/networkcpp/networkcpp/src/control_tcp_server_multi_thread.cpp > CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.i
 
 CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bumsu/protobuf/networkcpp/src/control_tcp_server_multi_thread.cpp -o CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayson/networkcpp/networkcpp/src/control_tcp_server_multi_thread.cpp -o CMakeFiles/control_tcp_server_multi_thread.dir/src/control_tcp_server_multi_thread.cpp.s
 
 CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.o: CMakeFiles/control_tcp_server_multi_thread.dir/flags.make
 CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.o: ../protobuf/awesomedata.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.o -c /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jayson/networkcpp/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.o -c /home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.cc
 
 CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc > CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.cc > CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.i
 
 CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc -o CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.cc -o CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.s
 
 # Object files for target control_tcp_server_multi_thread
 control_tcp_server_multi_thread_OBJECTS = \
@@ -95,7 +95,7 @@ control_tcp_server_multi_thread: CMakeFiles/control_tcp_server_multi_thread.dir/
 control_tcp_server_multi_thread: CMakeFiles/control_tcp_server_multi_thread.dir/protobuf/awesomedata.pb.cc.o
 control_tcp_server_multi_thread: CMakeFiles/control_tcp_server_multi_thread.dir/build.make
 control_tcp_server_multi_thread: CMakeFiles/control_tcp_server_multi_thread.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable control_tcp_server_multi_thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jayson/networkcpp/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable control_tcp_server_multi_thread"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/control_tcp_server_multi_thread.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/control_tcp_server_multi_thread.dir/clean:
 .PHONY : CMakeFiles/control_tcp_server_multi_thread.dir/clean
 
 CMakeFiles/control_tcp_server_multi_thread.dir/depend:
-	cd /home/bumsu/protobuf/networkcpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bumsu/protobuf/networkcpp /home/bumsu/protobuf/networkcpp /home/bumsu/protobuf/networkcpp/build /home/bumsu/protobuf/networkcpp/build /home/bumsu/protobuf/networkcpp/build/CMakeFiles/control_tcp_server_multi_thread.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jayson/networkcpp/networkcpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jayson/networkcpp/networkcpp /home/jayson/networkcpp/networkcpp /home/jayson/networkcpp/networkcpp/build /home/jayson/networkcpp/networkcpp/build /home/jayson/networkcpp/networkcpp/build/CMakeFiles/control_tcp_server_multi_thread.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/control_tcp_server_multi_thread.dir/depend
 

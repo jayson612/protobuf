@@ -34,7 +34,7 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 
-/home/bumsu/protobuf/networkcpp/src/control_tcp_server_multi_thread.cpp
+/home/jayson/networkcpp/networkcpp/src/control_tcp_server_multi_thread.cpp
 cstring
 -
 iostream

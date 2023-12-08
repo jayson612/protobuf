@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bumsu/protobuf/networkcpp
+CMAKE_SOURCE_DIR = /home/jayson/networkcpp/networkcpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bumsu/protobuf/networkcpp/build
+CMAKE_BINARY_DIR = /home/jayson/networkcpp/networkcpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/foothold_client.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/foothold_client.dir/flags.make
 
 CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o: CMakeFiles/foothold_client.dir/flags.make
 CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o: ../src/foothold_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o -c /home/bumsu/protobuf/networkcpp/src/foothold_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jayson/networkcpp/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o -c /home/jayson/networkcpp/networkcpp/src/foothold_client.cpp
 
 CMakeFiles/foothold_client.dir/src/foothold_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/foothold_client.dir/src/foothold_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bumsu/protobuf/networkcpp/src/foothold_client.cpp > CMakeFiles/foothold_client.dir/src/foothold_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayson/networkcpp/networkcpp/src/foothold_client.cpp > CMakeFiles/foothold_client.dir/src/foothold_client.cpp.i
 
 CMakeFiles/foothold_client.dir/src/foothold_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/foothold_client.dir/src/foothold_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bumsu/protobuf/networkcpp/src/foothold_client.cpp -o CMakeFiles/foothold_client.dir/src/foothold_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayson/networkcpp/networkcpp/src/foothold_client.cpp -o CMakeFiles/foothold_client.dir/src/foothold_client.cpp.s
 
 CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o: CMakeFiles/foothold_client.dir/flags.make
 CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o: ../protobuf/awesomedata.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o -c /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jayson/networkcpp/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o -c /home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.cc
 
 CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc > CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.cc > CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.i
 
 CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bumsu/protobuf/networkcpp/protobuf/awesomedata.pb.cc -o CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayson/networkcpp/networkcpp/protobuf/awesomedata.pb.cc -o CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.s
 
 # Object files for target foothold_client
 foothold_client_OBJECTS = \
@@ -95,7 +95,7 @@ foothold_client: CMakeFiles/foothold_client.dir/src/foothold_client.cpp.o
 foothold_client: CMakeFiles/foothold_client.dir/protobuf/awesomedata.pb.cc.o
 foothold_client: CMakeFiles/foothold_client.dir/build.make
 foothold_client: CMakeFiles/foothold_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bumsu/protobuf/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable foothold_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jayson/networkcpp/networkcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable foothold_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/foothold_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/foothold_client.dir/clean:
 .PHONY : CMakeFiles/foothold_client.dir/clean
 
 CMakeFiles/foothold_client.dir/depend:
-	cd /home/bumsu/protobuf/networkcpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bumsu/protobuf/networkcpp /home/bumsu/protobuf/networkcpp /home/bumsu/protobuf/networkcpp/build /home/bumsu/protobuf/networkcpp/build /home/bumsu/protobuf/networkcpp/build/CMakeFiles/foothold_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jayson/networkcpp/networkcpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jayson/networkcpp/networkcpp /home/jayson/networkcpp/networkcpp /home/jayson/networkcpp/networkcpp/build /home/jayson/networkcpp/networkcpp/build /home/jayson/networkcpp/networkcpp/build/CMakeFiles/foothold_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/foothold_client.dir/depend
 

@@ -14,7 +14,7 @@
 #define POSE 7
 #define NOMINAL 12
 #define JOINT 12
-
+using namespace std;
 int main()
 {
   int client_sockfd {};
@@ -45,6 +45,7 @@ int main()
 
   int recv {};
   char buffer[64] {};
+  bool flag = true;
   while (true) { 
     int recv = recvfrom(server_sockfd, buffer, sizeof(buffer), 0, (sockaddr *)&client_addr, &client_addr_len);
     if (recv < 0) {
@@ -67,6 +68,12 @@ int main()
 
     // pose_joint_nominal_pd 객체 직렬화
     std::string serialized_data = pose_joint_nominal_pd.SerializeAsString();
+
+    if (flag)
+    {
+      cout << "Start to send data(robot pose, joint value, nominal foot position) using UDP in 500hz" << endl;
+      flag = false;
+    }
 
     // 직렬화된 데이터를 클라이언트에게 전송
     if (sendto(server_sockfd, serialized_data.data(), serialized_data.size(), 0, (sockaddr *)&client_addr, client_addr_len) < 0) {

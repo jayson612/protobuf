@@ -11,12 +11,16 @@
 #define SW_FLAG 5
 #define CUR_FOOT 12
 
+using namespace std;
+
 int main() {
   int server_sockfd, client_sockfd;
   uint16_t PORT = 10000;
   sockaddr_in server_addr, client_addr;
   socklen_t client_addr_len = sizeof(client_addr);
-  protobuf::AwesomeData awesomedata_pb;
+  protobuf::AwesomeData vision_foothold;
+  protobuf::AwesomeData opt_trajectory_pd;
+  protobuf::AwesomeData message_queue_pd;
   protobuf::AwesomeData sw_flag_cur_foot_pd;
 
   server_sockfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -56,8 +60,13 @@ int main() {
 
     if (pid == 0) { // Child process
       close(server_sockfd); // Close listening socket in child process
-
+      bool flag = true;
+      auto prev_end = std::chrono::high_resolution_clock::now();
+      int tcp_ip_messsage_count = 0;
       while (true) {
+        tcp_ip_messsage_count++;
+        auto start = std::chrono::high_resolution_clock::now();
+
         char buffer[BUFFER_SIZE] = {0};
         int recv_len = read(client_sockfd, buffer, BUFFER_SIZE);
         if (recv_len <= 0) {
@@ -66,12 +75,29 @@ int main() {
         }
 
         std::string str_buf(buffer, buffer + recv_len);
-        if (awesomedata_pb.ParseFromString(str_buf)) {
-          std::string str = awesomedata_pb.somestring();
+        if (message_queue_pd.ParseFromString(str_buf)) {
+        // if (vision_foothold.ParseFromString(str_buf)) {
+          std::string topic_name = message_queue_pd.somestring();
+          if (topic_name == "vision_foothold")
+            vision_foothold = message_queue_pd;
+          else if (topic_name == "opt_trajectory")
+            opt_trajectory_pd = message_queue_pd;
+
+          auto end = std::chrono::high_resolution_clock::now();
+          std::chrono::duration<double> consumed_time = end - prev_end;
+          if(consumed_time.count() > 1)
+          {
+            double message_freq = tcp_ip_messsage_count / (consumed_time.count());
+            std::cout << "data(" << topic_name << ") from TCP/IP frequency : " << message_freq << "hz" << std::endl;
+            std::cout << "========================" << std::endl;
+            prev_end = end;
+            tcp_ip_messsage_count = 0;
+          }
+          std::string str = vision_foothold.somestring();
           // std::cout << "String: " << str << std::endl;
           // std::cout << "Array: ";
-          // for (int i = 0; i < awesomedata_pb.somearray_size(); i++) {
-          //   std::cout << awesomedata_pb.somearray(i) << " ";
+          // for (int i = 0; i < vision_foothold.somearray_size(); i++) {
+          //   std::cout << vision_foothold.somearray(i) << " ";
           // }
           // std::cout << std::endl;
 
@@ -96,6 +122,13 @@ int main() {
           // // 직렬화된 데이터의 크기를 전송
           // uint32_t message_size = serialized_data.size();
           // write(client_sockfd, &message_size, sizeof(message_size));
+
+          if (flag)
+          {
+            cout << "Start to send data(swing flag, current foot position) using TCP/IP in 500hz" << endl;
+            flag = false;
+          }
+          
 
           // 직렬화된 데이터를 클라이언트에게 전송
           write(client_sockfd, serialized_data.data(), serialized_data.size());

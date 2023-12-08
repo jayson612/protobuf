@@ -34,7 +34,7 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 
-/home/bumsu/protobuf/networkcpp/src/chomp_client.cpp
+/home/jayson/networkcpp/networkcpp/src/chomp_client.cpp
 cstring
 -
 iostream

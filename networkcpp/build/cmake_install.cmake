@@ -1,4 +1,4 @@
-# Install script for directory: /home/bumsu/protobuf/networkcpp
+# Install script for directory: /home/jayson/networkcpp/networkcpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bumsu/protobuf/networkcpp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jayson/networkcpp/networkcpp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

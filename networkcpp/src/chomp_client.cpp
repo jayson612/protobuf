@@ -19,6 +19,8 @@
 #define UDP_PORT 20000
 #define OPT_TRAJECTORY 96
 
+std::mutex cout_mutex;
+
 void tcp_communication(const char* server_ip, uint16_t port) {
   int sockfd {};
   const char *SERVER_IP { "127.0.0.1" };
@@ -49,7 +51,7 @@ void tcp_communication(const char* server_ip, uint16_t port) {
   
   */
 
- opt_trajectory_pd.set_somestring("opt_trajectory[96]");
+ opt_trajectory_pd.set_somestring("opt_trajectory");
 
   for (uint8_t i = 0; i < OPT_TRAJECTORY; i++) {
    opt_trajectory_pd.add_somearray(i);
@@ -69,11 +71,11 @@ void tcp_communication(const char* server_ip, uint16_t port) {
   char_buffer[string_buffer.size()] = '\0';
 
   auto prev_end = std::chrono::high_resolution_clock::now();
-  int message_count = 0;
+  int tcp_ip_messsage_count = 0;
 
   int sent {};
   while (true) {
-    message_count++;
+    tcp_ip_messsage_count++;
     auto start = std::chrono::high_resolution_clock::now();
     sent = write(sockfd, char_buffer, opt_trajectory_pd.ByteSizeLong());
     nanosleep(&TS_SEC_1, nullptr);
@@ -118,11 +120,13 @@ void tcp_communication(const char* server_ip, uint16_t port) {
     // std::cout << consumed_time.count() << std::endl;
     if(consumed_time.count() > 1)
     {
-      double message_freq = message_count / (consumed_time.count());
-      std::cout << "data frequency : " << message_freq << "hz" << std::endl;
+      double message_freq = tcp_ip_messsage_count / (consumed_time.count());
+      cout_mutex.lock();
+      std::cout << "data from TCP/IP frequency : " << message_freq << "hz" << std::endl;
       std::cout << "========================" << std::endl;
       prev_end = end;
-      message_count = 0;
+      tcp_ip_messsage_count = 0;
+      cout_mutex.unlock();
     }
     // std::cout << "consumed_time : " << consumed_time.count()*1000 << "mili-second..." << std::endl;
 
@@ -139,7 +143,7 @@ void udp_communication(const char* server_ip, uint16_t port) {
   const char *SERVER_IP { "127.0.0.1" }; 
   uint16_t PORT { port }; 
   sockaddr_in server_addr {}; 
-  timespec TS_SEC_1 { .tv_sec = 1, .tv_nsec = 0 }; 
+  timespec TS_SEC_1 { .tv_sec = 0, .tv_nsec = 1850000 }; 
   protobuf::AwesomeData awesomedata; 
 
   if ((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) { 
@@ -161,8 +165,11 @@ void udp_communication(const char* server_ip, uint16_t port) {
   std::string string_buffer {};
  awesomedata.SerializeToString(&string_buffer);
   uint8_t *char_buffer = reinterpret_cast<uint8_t*>(const_cast<char*>(string_buffer.data()));
-  
+  auto prev_end = std::chrono::high_resolution_clock::now();
+  int udp_messsage_count = 0;
   while (true) {
+    udp_messsage_count++;
+    auto start = std::chrono::high_resolution_clock::now();
 
     // 서버로 데이터 전송
     if (sendto(sockfd, char_buffer, string_buffer.size(), 0, (sockaddr *)&server_addr, server_addr_len) < 0) {
@@ -170,7 +177,7 @@ void udp_communication(const char* server_ip, uint16_t port) {
       break;
     }
     
-    nanosleep(&TS_SEC_1, nullptr);
+    // nanosleep(&TS_SEC_1, nullptr);
    
   // 서버로 데이터 전송
     if (sendto(sockfd, char_buffer, string_buffer.size(), 0, (sockaddr *)&server_addr, server_addr_len) < 0) {
@@ -189,13 +196,26 @@ void udp_communication(const char* server_ip, uint16_t port) {
             // 수신된 데이터를 protobuf 메시지로 파싱
             protobuf::AwesomeData pose_joint_norminal_pd;
             if (pose_joint_norminal_pd.ParseFromArray(recv_buffer, len)) {
-                // 수신된 데이터 처리
-                std::cout << "Received String: " << pose_joint_norminal_pd.somestring() << std::endl;
-                std::cout << "Received Array: ";
-                for (int i = 0; i < pose_joint_norminal_pd.somearray_size(); i++) {
-                    std::cout << pose_joint_norminal_pd.somearray(i) << " ";
+                // // 수신된 데이터 처리
+                // std::cout << "Received String: " << pose_joint_norminal_pd.somestring() << std::endl;
+                // std::cout << "Received Array: ";
+                // for (int i = 0; i < pose_joint_norminal_pd.somearray_size(); i++) {
+                //     std::cout << pose_joint_norminal_pd.somearray(i) << " ";
+                // }
+                // std::cout << std::endl;
+                auto end = std::chrono::high_resolution_clock::now();
+                std::chrono::duration<double> consumed_time = end - prev_end;
+                if(consumed_time.count() > 1)
+                {
+                  double message_freq = udp_messsage_count / (consumed_time.count());
+                  cout_mutex.lock();
+                  std::cout << "data from UDP frequency : " << message_freq << "hz" << std::endl;
+                  std::cout << "========================" << std::endl;
+                  prev_end = end;
+                  udp_messsage_count = 0;
+                  cout_mutex.unlock();
                 }
-                std::cout << std::endl;
+                continue;
             } else {
                 std::cerr << "Failed to parse protobuf message" << std::endl;
             }

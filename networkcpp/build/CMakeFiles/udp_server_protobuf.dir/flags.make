@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bumsu/protobuf/networkcpp/protobuf 
+CXX_INCLUDES = -I/home/jayson/networkcpp/networkcpp/protobuf 
 
